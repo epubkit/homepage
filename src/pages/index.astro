@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import Main from "../layouts/main.astro";
+
+const content = {
+  title: "EpubKit",
+};
+---
+
+<Main content={content}>
+  <section class="max-w-[640px] mx-auto mt-24 flex flex-col gap-24 text-center">
+    <div class="flex flex-col items-center">
+      <Image width="128" height="128" src="/icon.png" alt="EpubKit" />
+      <span class="font-bold">EpubKit</span>
+    </div>
+
+    <div class="text-5xl font-black">
+      <h1>
+        The best tool to convert <span class="text-green-700"
+          >web pages to Ebook</span
+        >
+      </h1>
+    </div>
+
+    <div class="">
+      <a
+        class="bg-black/90 text-white/90 px-6 py-4 font-bold rounded-lg"
+        href="https://github.com/djyde/epubkit-release/releases/latest/download/epubkit.dmg"
+        >Download (macOS)</a
+      >
+    </div>
+  </section>
+
+  <section class="max-w-[1200px] mx-auto mt-16">
+    <img src="/intro.png" />
+  </section>
+</Main>
