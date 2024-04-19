@@ -8,8 +8,39 @@ const content = {
 ---
 
 <Main content={content}>
-  <section class="max-w-[640px] mx-auto mt-24 flex flex-col gap-24 text-center">
-    <div class="flex flex-col items-center">
+  <section class="p-6 md:p-24 max-w-[1200px] mx-auto">
+    <div class="flex flex-col gap-12">
+      <Image width="128" height="128" src="/icon.png" alt="EpubKit" />
+      <div class="text-5xl font-black">
+        <p>The best tool to</p>
+        <p>
+          convert
+          <span class="text-green-700">web pages to Ebook</span>.
+        </p>
+      </div>
+
+      <div class="flex items-start">
+        <a
+          class="bg-black/80 inline-block text-center text-white/90 px-6 py-3 font-medium rounded-xl"
+          href="https://github.com/djyde/epubkit-release/releases/download/v1.0.5/epubkit-1.0.5-arm64.dmg"
+        >
+          <div class="text-md">Download for macOS (ARM64)</div>
+        </a>
+        <a
+          class="inline-block text-center px-6 py-3 font-medium rounded-xl"
+          href="https://github.com/djyde/epubkit-release/releases/download/v1.0.5/epubkit-1.0.5-arm64.dmg"
+        >
+          <div class="text-md">Download for macOS (Intel)</div>
+        </a>
+      </div>
+
+      <div>
+        <img class="rounded-xl border-4 border-black/70" src="/intro3.png" />
+      </div>
+    </div>
+  </section>
+  <!-- <section class="mt-24 flex flex-col gap-24 text-center">
+    <div class="flex flex-col">
       <Image width="128" height="128" src="/icon.png" alt="EpubKit" />
       <span class="font-bold">EpubKit</span>
     </div>
@@ -125,7 +156,7 @@ const content = {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer class="my-64"></footer>
 </Main>
