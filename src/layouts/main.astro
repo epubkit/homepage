@@ -5,24 +5,28 @@ import { SEO } from "astro-seo";
 
 <html lang="en">
   <head>
-    <SEO 
+    <script
+      defer
+      src="https://randy-umami.zeabur.app/script.js"
+      data-website-id="eebc02c9-57a0-42a8-84f9-623495863e40"></script>
+    <SEO
       title={content.title}
       description="Best tool to convert web pages to EPUB"
       openGraph={{
         basic: {
           title: "EpubKit - web pages to EPUB",
           image: "https://epubkit.app/og.png",
-          type: "website"
+          type: "website",
         },
         optional: {
           description: "EpubKit is the best tool to convert web pages to EPUB",
           siteName: "EpubKit",
-        }
+        },
       }}
       twitter={{
         title: "EpubKit",
         image: "https://epubkit.app/og.png",
-        description: "EpubKit is the best tool to convert web pages to EPUB"
+        description: "EpubKit is the best tool to convert web pages to EPUB",
       }}
     />
     <meta charset="utf-8" />
