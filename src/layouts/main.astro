@@ -1,16 +1,32 @@
 ---
 const { content } = Astro.props;
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
   <head>
+    <SEO 
+      title={content.title}
+      description="Best tool to convert web pages to epub"
+      openGraph={{
+        basic: {
+          title: "EpubKit is the best tool to convert web pages to epub",
+          image: "https://epubkit.app/og.png",
+          type: "website"
+        }
+      }}
+      twitter={{
+        image: "https://epubkit.app/og.png",
+        description: "EpubKit is the best tool to convert web pages to epub"
+      }}
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/fav.ico" />
     <title>{content.title}</title>
     <style>
       html {
-        background-color: rgba(0, 0, 0, 0.03)
+        background-color: rgba(0, 0, 0, 0.03);
       }
     </style>
   </head>
@@ -19,7 +35,6 @@ const { content } = Astro.props;
       <slot />
     </div>
 
-    <script>
-    </script>
+    <script></script>
   </body>
 </html>
