@@ -7,18 +7,21 @@ import { SEO } from "astro-seo";
   <head>
     <SEO 
       title={content.title}
-      description="Best tool to convert web pages to epub"
+      description="Best tool to convert web pages to EPUB"
       openGraph={{
         basic: {
-          title: "EpubKit is the best tool to convert web pages to epub",
+          title: "EpubKit - web pages to EPUB",
           image: "https://epubkit.app/og.png",
           type: "website"
+        },
+        optional: {
+          description: "EpubKit is the best tool to convert web pages to EPUB",
         }
       }}
       twitter={{
         title: "EpubKit",
         image: "https://epubkit.app/og.png",
-        description: "EpubKit is the best tool to convert web pages to epub"
+        description: "EpubKit is the best tool to convert web pages to EPUB"
       }}
     />
     <meta charset="utf-8" />
