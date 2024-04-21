@@ -14,13 +14,13 @@ import { SEO } from "astro-seo";
       description="Best tool to convert web pages to EPUB. Ideal for compiling research, creating personalized reading lists, or archiving websites. "
       openGraph={{
         basic: {
-          title: "EpubKit - web pages to EPUB",
+          title: content.title,
           image: "https://epubkit.app/og.png",
           type: content.ogType || "website",
         },
         optional: {
           description: "EpubKit is the best tool to convert web pages to EPUB",
-          siteName: "EpubKit",
+          siteName: content.title,
         },
       }}
       twitter={{
