@@ -16,7 +16,7 @@ import { SEO } from "astro-seo";
         basic: {
           title: "EpubKit - web pages to EPUB",
           image: "https://epubkit.app/og.png",
-          type: "website",
+          type: content.ogType || "website",
         },
         optional: {
           description: "EpubKit is the best tool to convert web pages to EPUB",
