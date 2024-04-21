@@ -1,0 +1,15 @@
+---
+import Main from "./main.astro";
+
+const fm = Astro.props.frontmatter;
+---
+
+<Main content={fm}>
+  <div class="prose mx-auto my-24 px-4">
+    <nav class="mb-12">
+      <a class="no-underline" href="/">← EpubKit</a>
+    </nav>
+    <h1>{fm.title}</h1>
+    <slot />
+  </div>
+</Main>
