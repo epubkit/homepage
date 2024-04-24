@@ -7,7 +7,7 @@ In our increasingly digital world, accessing information offline can be just as 
 
 This guide walks you through the easy steps to use EpubKit, transforming your web reading experience into something truly mobile.
 
-![a kindle device](/images/kindle.png)
+![a kindle device](/images/kindle.jpg)
 
 ## Step 1: Download EpubKit
 
