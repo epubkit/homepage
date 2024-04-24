@@ -1,5 +1,5 @@
 ---
-title: How to convert web page to ebook
+title: How to read blog on Kindle
 layout: ../../layouts/blog.astro
 ---
 For avid readers who rely on their Kindle devices for everything from bestselling novels to morning news, not being able to read your favorite blogs on the same device might seem like a missed opportunity. However, with the help of EpubKit, you can now bridge this gap. 
