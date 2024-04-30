@@ -58,13 +58,56 @@ const downloads = {
         </p>
       </div>
 
-      <div class="flex items-start">
+      <div class="flex items-center gap-6">
         <button
           class="bg-black/80 inline-block text-center text-white/90 px-6 py-3 font-medium rounded-xl"
           onclick="document.getElementById('download_modal').showModal()"
         >
-          <div class="text-md">Download</div>
+          <div class="text-md">Download <strong>EpubKit</strong></div>
         </button>
+
+        <div class="flex gap-3 items-center">
+          <div>
+            <a
+              href="https://chromewebstore.google.com/detail/epubkit-connect/kolfkabggcnighackpbmmdolojkffapk"
+              target="_blank"
+            >
+              <img
+                src="/images/chrome.png"
+                class="w-[40px]"
+                title="Chrome Extension"
+                alt="chrome extension"
+              /></a
+            >
+          </div>
+          <div>
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/epubkit-connect/"
+              target="_blank"
+            >
+              <img
+                src="/images/firefox.png"
+                class="w-[40px]"
+                title="Firefox Addon"
+                alt="firefox extension"
+              /></a
+            >
+          </div>
+
+          <div>
+            <a
+              href="https://chromewebstore.google.com/detail/epubkit-connect/kolfkabggcnighackpbmmdolojkffapk"
+              target="_blank"
+            >
+              <img
+                src="/images/edge.png"
+                class="w-[32px]"
+                title="Edge Addon"
+                alt="Edge Addon"
+              /></a
+            >
+          </div>
+        </div>
       </div>
 
       <div>
@@ -113,10 +156,13 @@ const downloads = {
           <div class="text-4xl mb-2">🔗</div>
           <h3 class="font-bold mb-2">Connect</h3>
           <p class="text-black/60">
-            <strong>EpubKit Connect</strong> feature allows you to save web page through HTTP API and browser extension.
+            <strong>EpubKit Connect</strong> feature allows you to save web page
+            through HTTP API and browser extension.
           </p>
           <p class="mt-3">
-            See <a class="underline text-sm" target="_blank" href="/doc/connect">API document</a>
+            See <a class="underline text-sm" target="_blank" href="/doc/connect"
+              >API document</a
+            >
           </p>
         </div>
       </div>
