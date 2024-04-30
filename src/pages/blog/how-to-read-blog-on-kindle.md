@@ -24,7 +24,7 @@ EpubKit makes it simple to add individual web pages to your collection. Just cli
 
 If you aim to include several articles from a website—such as a list of blog posts, news articles, or a series from platforms like Substack—navigate to the 'Multiple Pages' tab. EpubKit will analyze the page and list all detectable links. Simply check the boxes next to the articles you want to include in your collection, and EpubKit will handle the rest.
 
-![import multiple web pages](/images/epubkit-multi-pages.png)
+![import multiple web pages](/images/epubkit-multi-pages.jpg)
 
 ### Option: Accessing content from login-required sites
 
