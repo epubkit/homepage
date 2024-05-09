@@ -3,17 +3,17 @@ import { Image } from "astro:assets";
 import Main from "../layouts/main.astro";
 
 const content = {
-  title: "EpubKit",
+	title: "EpubKit",
 };
 
 const downloads = {
-  mac: {
-    arm64:
-      "https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-arm64.dmg",
-    x64: "https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-x64.dmg",
-  },
-  windows:
-    "https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-setup.exe",
+	mac: {
+		arm64:
+			"https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-arm64.dmg",
+		x64: "https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-x64.dmg",
+	},
+	windows:
+		"https://release.randynamic.org/djyde/epubkit-release/releases/download/v1.2.0/epubkit-1.2.0-setup.exe",
 };
 ---
 
@@ -143,6 +143,14 @@ const downloads = {
           <p class="text-black/60">
             Import any web page, whether it is a dynamic web page or a web page
             that requires login.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-lg p-8">
+          <div class="text-4xl mb-2">🛜</div>
+          <h3 class="font-bold mb-2">RSS</h3>
+          <p class="text-black/60">
+            Import articles from  RSS. Even if some RSS feeds don't provide full-text output, EpubKit can still save the full text.
           </p>
         </div>
 
