@@ -3,6 +3,8 @@ const { content } = Astro.props;
 import { SEO } from "astro-seo";
 import {config} from '../config'
 import { FaChrome, FaEdge, FaFirefox } from 'react-icons/fa'
+
+const {lang} = Astro.params;
 ---
 
 <html lang="en">
@@ -72,6 +74,7 @@ import { FaChrome, FaEdge, FaFirefox } from 'react-icons/fa'
       </dialog>
 
       <nav class="mb-24">
+        {lang}
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
