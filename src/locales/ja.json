@@ -1,0 +1,84 @@
+{
+  "home": {
+    "words": {
+      "slogan": "ウェブを電子書籍に変換する最高のツール",
+      "description": "Webページ、オンラインブック、およびRSS記事を電子書籍として保存",
+      "download": "ダウンロード",
+      "support_platforms": "WindowsとmacOSをサポート",
+      "try_it_now": "今すぐお試しください",
+      "pricing": "価格設定",
+      "browser_extension": "ブラウザ拡張機能",
+      "FAQ": "よくある質問",
+      "frequently_asked_questions": "よくある質問"
+    },
+    "features": [
+      {
+        "title": "Webページから電子書籍へ",
+        "description": "1つ以上のURLをマージして保存し、ePub電子書籍としてエクスポート",
+        "img": "/images/epubkit-import-url.png"
+      },
+      {
+        "title": "Webサイトから一括ですべてのリンクを保存",
+        "description": "お気に入りのブログをKindleで読みたいですか？ サイト内のすべてのリンクをまとめて選択して電子書籍として保存",
+        "img": "/images/epubkit-import-website.png"
+      },
+      {
+        "title": "RSSから電子書籍へ",
+        "description": "お気に入りのRSSフィードから記事を取得し、まとめて選択して電子書籍として保存",
+        "img": "/images/epubkit-import-rss.png"
+      },
+      {
+        "title": "ブラウザでWebページを保存",
+        "description": "現在のブラウジング中のページを保存するためにブラウザプラグインをインストール",
+        "img": "/images/epubkit-extension.png"
+      }
+    ],
+    "qna": [
+      {
+        "q": "ログインが必要なコンテンツをEpubKitで保存できますか？",
+        "a": "EpubKitソフトウェアの'Browser'機能を使用して最初にログインするか、ページコンテンツを保存するためのブラウザプラグインを使用できます。"
+      },
+      {
+        "q": "私のコンテンツはサーバーにアップロードされますか？",
+        "a": "いいえ。すべてのコンテンツ処理はあなたのデバイスで行われ、コンテンツはサーバーを通過しません。"
+      }
+    ],
+    "pricing": [
+      {
+        "title": "無料",
+        "price": "$0",
+        "description": "無料で利用可能",
+        "features": [
+          "各eBookあたり最大10ページまでエクスポート可能",
+          "カスタムカバー",
+          "ブラウザプラグイン"
+        ]
+      },
+      {
+        "title": "プロ",
+        "price": "$12",
+        "description": "一度の支払いのみ",
+        "features": [
+          "無制限のページエクスポート",
+          "カスタムカバー",
+          "ブラウザプラグイン",
+          "1つのデバイスでのアクティベーション",
+          "1年間のバージョン更新"
+        ]
+      },
+      {
+        "title": "終身",
+        "price": "$29",
+        "originalPrice": "$39",
+        "features": [
+          "無制限のページエクスポート",
+          "カスタムカバー",
+          "ブラウザプラグイン",
+          "2つのデバイスでのアクティベーション",
+          "終身バージョン更新"
+        ],
+        "description": "一度の支払いのみ"
+      }
+    ]
+  }
+}

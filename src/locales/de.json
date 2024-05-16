@@ -1,0 +1,84 @@
+{
+  "home": {
+    "words": {
+      "slogan": "Das beste Tool, um Web zu E-Book zu konvertieren",
+      "description": "Speichern Sie Webseiten, Online-Bücher und RSS-Artikel als E-Books",
+      "download": "Herunterladen",
+      "support_platforms": "Unterstützt Windows und macOS",
+      "try_it_now": "Jetzt ausprobieren",
+      "pricing": "Preise",
+      "browser_extension": "Browsererweiterung",
+      "FAQ": "FAQ",
+      "frequently_asked_questions": "Häufige Fragen"
+    },
+    "features": [
+      {
+        "title": "Webseite zu eBook",
+        "description": "Eine oder mehrere URLs zusammenführen und als ePub eBook exportieren",
+        "img": "/images/epubkit-import-url.png"
+      },
+      {
+        "title": "Alle Links einer Website mit einem Klick speichern",
+        "description": "Möchten Sie Ihre Lieblingsblogs auf dem Kindle lesen? Wählen Sie alle Links auf der Website in einem Rutsch aus und speichern Sie sie als eBook",
+        "img": "/images/epubkit-import-website.png"
+      },
+      {
+        "title": "RSS zu eBook",
+        "description": "Holen Sie sich Artikel aus Ihren Lieblings-RSS-Feeds und wählen Sie sie in großen Mengen aus, um sie als eBook zu speichern",
+        "img": "/images/epubkit-import-rss.png"
+      },
+      {
+        "title": "Webseiten im Browser speichern",
+        "description": "Installieren Sie das Browser-Plugin, um die aktuelle Browsing-Webseite zu speichern",
+        "img": "/images/epubkit-extension.png"
+      }
+    ],
+    "qna": [
+      {
+        "q": "Kann EpubKit Inhalte speichern, die eine Anmeldung erfordern?",
+        "a": "Sie können das Browser-Plugin verwenden, um den Seiteninhalt zu speichern, den Sie nach dem Anmelden sehen. Oder melden Sie sich zuerst mit der 'Browser'-Funktion in der EpubKit-Software an und importieren Sie dann den Link."
+      },
+      {
+        "q": "Wird mein Inhalt auf den Server hochgeladen?",
+        "a": "Nein. Die gesamte Inhaltsverarbeitung erfolgt auf Ihrem Gerät, und die Inhalte werden nicht über einen Server geleitet."
+      }
+    ],
+    "pricing": [
+      {
+        "title": "Kostenlos",
+        "price": "$0",
+        "description": "Kostenlose Nutzung",
+        "features": [
+          "Export von bis zu 10 Seiten pro eBook",
+          "Individuelles Cover",
+          "Browser-Plugin"
+        ]
+      },
+      {
+        "title": "Pro",
+        "price": "$12",
+        "description": "Einmalzahlung",
+        "features": [
+          "Unbegrenzter Seitenexport",
+          "Individuelles Cover",
+          "Browser-Plugin",
+          "Auf einem Gerät aktivieren",
+          "Ein Jahr Versions-Updates"
+        ]
+      },
+      {
+        "title": "Lebenslang",
+        "price": "$29",
+        "originalPrice": "$39",
+        "features": [
+          "Unbegrenzter Seitenexport",
+          "Individuelles Cover",
+          "Browser-Plugin",
+          "Auf zwei Geräten aktivieren",
+          "Lebenslange Versions-Updates"
+        ],
+        "description": "Einmalzahlung"
+      }
+    ]
+  }
+}

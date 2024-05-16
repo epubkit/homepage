@@ -1,10 +1,37 @@
 ---
 const { content } = Astro.props;
 import { SEO } from "astro-seo";
-import {config} from '../config'
-import { FaChrome, FaEdge, FaFirefox } from 'react-icons/fa'
+import { config } from "../config";
+import { FaApple, FaChrome, FaEdge, FaFirefox, FaLanguage, FaWindows } from "react-icons/fa";
 
-const {lang} = Astro.params;
+const { lang } = Astro.params;
+
+const langs = [
+	{
+		code: "en",
+		name: "English",
+	},
+	{
+		code: "zh",
+		name: "中文",
+	},
+	{
+		code: "ja",
+		name: "日本語",
+	},
+  {
+    code: "ko",
+    name: "한국어",
+  },
+  {
+    code: "ru",
+    name: "Русский",
+  },
+  {
+    code: "de",
+    name: "Deutsch",
+  }
+];
 ---
 
 <html lang="en">
@@ -62,7 +89,21 @@ const {lang} = Astro.params;
           <div class="mt-3">
             <ul class="space-y-1">
                 <li>
-                  <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-2" >
+                  <a href="https://gh-download.randynamic.org/download/djyde/epubkit-release/win/x64" target="_blank" rel="noreferrer" class="flex items-center gap-2" >
+                  <FaWindows />
+                    Windows
+                  </a>
+                </li>
+                <li>
+                  <a href="https://gh-download.randynamic.org/download/djyde/epubkit-release/mac/intel" target="_blank" rel="noreferrer" class="flex items-center gap-2" >
+                  <FaApple />
+                    macOS (Intel)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://gh-download.randynamic.org/download/djyde/epubkit-release/mac/arm" target="_blank" rel="noreferrer" class="flex items-center gap-2" >
+                  <FaApple />
+                    macOS (ARM)
                   </a>
                 </li>
             </ul>
@@ -74,7 +115,6 @@ const {lang} = Astro.params;
       </dialog>
 
       <nav class="mb-24">
-        {lang}
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -147,6 +187,20 @@ const {lang} = Astro.params;
             </ul>
           </div>
           <div class="navbar-end">
+            <ul class="menu lg:menu-horizontal">
+              <li>
+                <details open>
+                  <summary><FaLanguage className="text-3xl" /></summary>
+                  <ul>
+                    {langs.map(lang => {
+                      return (
+                        <li><a href={`/${lang.code}`}>{lang.name}</a></li>
+                      )
+                    })}
+                  </ul>
+                </details>
+              </li>
+            </ul>
             <button class="btn" type="button" onclick="showDownloadModal()">Try it now</button>
           </div>
         </div>

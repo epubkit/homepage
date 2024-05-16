@@ -1,0 +1,84 @@
+{
+  "home": {
+    "words": {
+      "slogan": "웹을 전자책으로 변환하는 최고의 도구",
+      "description": "웹 페이지, 온라인 책, RSS 기사를 전자책으로 저장",
+      "download": "다운로드",
+      "support_platforms": "Windows 및 macOS 지원",
+      "try_it_now": "지금 시도하세요",
+      "pricing": "가격",
+      "browser_extension": "브라우저 확장 프로그램",
+      "FAQ": "자주 묻는 질문",
+      "frequently_asked_questions": "자주 묻는 질문"
+    },
+    "features": [
+      {
+        "title": "웹페이지를 전자책으로",
+        "description": "한 개 이상의 URL을 병합 및 저장, ePub 전자책으로 내보내기",
+        "img": "/images/epubkit-import-url.png"
+      },
+      {
+        "title": "한 번의 클릭으로 웹사이트의 모든 링크 저장",
+        "description": "즐겨 읽는 블로그를 Kindle에서 보고 싶으세요? 사이트 내의 모든 링크를 선택하고 전자책으로 저장",
+        "img": "/images/epubkit-import-website.png"
+      },
+      {
+        "title": "RSS를 전자책으로",
+        "description": "즐겨찾는 RSS 피드의 기사를 가져와서 일괄 선택 후 전자책으로 저장",
+        "img": "/images/epubkit-import-rss.png"
+      },
+      {
+        "title": "브라우저에서 웹 페이지 저장",
+        "description": "브라우저 플러그인을 설치하여 현재 브라우징 중인 웹페이지 저장",
+        "img": "/images/epubkit-extension.png"
+      }
+    ],
+    "qna": [
+      {
+        "q": "EpubKit이 로그인 필요한 콘텐츠를 저장할 수 있나요?",
+        "a": "로그인 후 보이는 페이지 콘텐츠를 브라우저 플러그인으로 저장할 수 있습니다. 또는 EpubKit 소프트웨어의 '브라우저' 기능을 사용하여 먼저 로그인 후 링크를 가져오세요."
+      },
+      {
+        "q": "내 콘텐츠가 서버에 업로드되나요?",
+        "a": "아니요. 모든 콘텐츠 처리는 사용자의 장치에서 이루어지며, 콘텐츠는 어떤 서버를 거치지 않습니다."
+      }
+    ],
+    "pricing": [
+      {
+        "title": "무료",
+        "price": "$0",
+        "description": "무료 사용",
+        "features": [
+          "전자책당 최대 10페이지 내보내기",
+          "맞춤 커버",
+          "브라우저 플러그인"
+        ]
+      },
+      {
+        "title": "프로",
+        "price": "$12",
+        "description": "일회성 결제",
+        "features": [
+          "무제한 페이지 내보내기",
+          "맞춤 커버",
+          "브라우저 플러그인",
+          "장치 하나에서 활성화",
+          "1년간 버전 업데이트"
+        ]
+      },
+      {
+        "title": "평생",
+        "price": "$29",
+        "originalPrice": "$39",
+        "features": [
+          "무제한 페이지 내보내기",
+          "맞춤 커버",
+          "브라우저 플러그인",
+          "장치 두 개에서 활성화",
+          "평생 버전 업데이트"
+        ],
+        "description": "일회성 결제"
+      }
+    ]
+  }
+}
