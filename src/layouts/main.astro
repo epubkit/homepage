@@ -2,7 +2,14 @@
 const { content } = Astro.props;
 import { SEO } from "astro-seo";
 import { config } from "../config";
-import { FaApple, FaChrome, FaEdge, FaFirefox, FaLanguage, FaWindows } from "react-icons/fa";
+import {
+	FaApple,
+	FaChrome,
+	FaEdge,
+	FaFirefox,
+	FaLanguage,
+	FaWindows,
+} from "react-icons/fa";
 
 const { lang } = Astro.params;
 
@@ -19,27 +26,28 @@ const langs = [
 		code: "ja",
 		name: "日本語",
 	},
-  {
-    code: "ko",
-    name: "한국어",
-  },
-  {
-    code: "ru",
-    name: "Русский",
-  },
-  {
-    code: "de",
-    name: "Deutsch",
-  }
+	{
+		code: "ko",
+		name: "한국어",
+	},
+	{
+		code: "ru",
+		name: "Русский",
+	},
+	{
+		code: "de",
+		name: "Deutsch",
+	},
 ];
 ---
 
 <html lang="en">
   <head>
+    {import.meta.env.PROD &&
     <script
       defer
       src="https://randy-umami.zeabur.app/script.js"
-      data-website-id="eebc02c9-57a0-42a8-84f9-623495863e40"></script>
+      data-website-id="eebc02c9-57a0-42a8-84f9-623495863e40"></script>}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline>
       function showDownloadModal() {
