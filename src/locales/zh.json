@@ -1,0 +1,76 @@
+{
+  "home": {
+    "words": {
+      "description": "把网页、在线书、RSS 文章保存为电子书，用你喜欢的阅读器沉浸式阅读。"
+    },
+    "qna": [
+      {
+        "q": "EpubKit 可以保存需要登录的内容吗？",
+        "a": "可以使用浏览器插件保存你在登录后看到的页面内容。或在 EpubKit 软件中的「浏览器」功能中先登录后再导入链接。"
+      },
+      {
+        "q": "我的内容会被上传到服务器吗？",
+        "a": "不会。所有内容的处理均在你的设备上进行，内容不经过任何服务器。"
+      }
+    ],
+    "pricing": [
+      {
+        "title": "免费",
+        "price": "$0",
+        "description": "免费使用",
+        "features": [
+          "每本电子书最多可导出 10 个页面",
+          "自定义封面",
+          "浏览器插件"
+        ]
+      },
+      {
+        "title": "Pro",
+        "price": "$12",
+        "description": "一次性付款",
+        "features": [
+          "无限制导出页面",
+          "自定义封面",
+          "浏览器插件",
+          "一台设备激活",
+          "一年版本更新"
+        ]
+      },
+      {
+        "title": "Lifetime",
+        "price": "$29",
+        "originalPrice": "$39",
+        "features": [
+          "无限制导出页面",
+          "自定义封面",
+          "浏览器插件",
+          "两台设备激活",
+          "终身版本更新"
+        ],
+        "description": "一次性付款"
+      }
+    ],
+    "features": [
+      {
+        "title": "网页转电子书",
+        "description": "把一个或多个 URL 合并保存，导出为 ePub 电子书",
+        "img": "/images/epubkit-import-url.png"
+      },
+      {
+        "title": "一键保存网站内链接",
+        "description": "想在 Kindle 读你喜欢的博客？批量选择网站内所有链接保存为电子书",
+        "img": "/images/epubkit-import-website.png"
+      },
+      {
+        "title": "RSS 转电子书",
+        "description": "获取你喜欢的 RSS 信息源文章，批量选择文章保存为电子书",
+        "img": "/images/epubkit-import-rss.png"
+      },
+      {
+        "title": "在浏览器中保存网页",
+        "description": "安装浏览器插件，保存当前浏览网页",
+        "img": "/images/epubkit-extension.png"
+      }
+    ]
+  }
+}

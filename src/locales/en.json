@@ -1,0 +1,83 @@
+{
+  "home": {
+    "words": {
+      "description": "Save web pages, Online books, and RSS articles as e-books",
+      "download": "Download",
+      "support_platforms": "Supports Windows and macOS",
+      "try_it_now": "Try it now",
+      "pricing": "Pricing",
+      "browser_extension": "Browser Extension",
+      "FAQ": "FAQ",
+      "frequently_asked_questions": "Frequently Asked Questions"
+    },
+    "features": [
+      {
+        "title": "Webpage to eBook",
+        "description": "Merge and save one or more URLs, export as ePub eBook",
+        "img": "/images/epubkit-import-url.png"
+      },
+      {
+        "title": "Save All Links from a Website with One Click",
+        "description": "Want to read your favorite blogs on Kindle? Select all links within the site in bulk and save as eBook",
+        "img": "/images/epubkit-import-website.png"
+      },
+      {
+        "title": "RSS to eBook",
+        "description": "Get articles from your favorite RSS feeds and select in bulk to save as eBook",
+        "img": "/images/epubkit-import-rss.png"
+      },
+      {
+        "title": "Save Web Pages in Browser",
+        "description": "Install browser plugin to save the current browsing webpage",
+        "img": "/images/epubkit-extension.png"
+      }
+    ],
+    "qna": [
+      {
+        "q": "Can EpubKit save content that requires login?",
+        "a": "You can use the browser plugin to save the page content you see after logging in. Or log in first using the 'Browser' feature in the EpubKit software and then import the link."
+      },
+      {
+        "q": "Will my content be uploaded to the server?",
+        "a": "No. All content processing is done on your device, and the content does not pass through any server."
+      }
+    ],
+    "pricing": [
+      {
+        "title": "Free",
+        "price": "$0",
+        "description": "Free to use",
+        "features": [
+          "Export up to 10 pages per eBook",
+          "Custom cover",
+          "Browser plugin"
+        ]
+      },
+      {
+        "title": "Pro",
+        "price": "$12",
+        "description": "One-time payment",
+        "features": [
+          "Unlimited page export",
+          "Custom cover",
+          "Browser plugin",
+          "Activate on one device",
+          "One year of version updates"
+        ]
+      },
+      {
+        "title": "Lifetime",
+        "price": "$29",
+        "originalPrice": "$39",
+        "features": [
+          "Unlimited page export",
+          "Custom cover",
+          "Browser plugin",
+          "Activate on two devices",
+          "Lifetime version updates"
+        ],
+        "description": "One-time payment"
+      }
+    ]
+  }
+}

@@ -1,6 +1,8 @@
 ---
 const { content } = Astro.props;
 import { SEO } from "astro-seo";
+import {config} from '../config'
+import { FaChrome, FaEdge, FaFirefox } from 'react-icons/fa'
 ---
 
 <html lang="en">
@@ -10,6 +12,16 @@ import { SEO } from "astro-seo";
       src="https://randy-umami.zeabur.app/script.js"
       data-website-id="eebc02c9-57a0-42a8-84f9-623495863e40"></script>
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <script is:inline>
+      function showDownloadModal() {
+        const modal = document.getElementById("download_modal");
+        modal.showModal();
+      }
+      function closeDownloadModal() {
+        const modal = document.getElementById("download_modal");
+        modal.close();
+      }
+    </script>
     <SEO
       title={content.title}
       description="Best tool to convert web pages to EPUB. Ideal for compiling research, creating personalized reading lists, or archiving websites. "
@@ -41,10 +53,132 @@ import { SEO } from "astro-seo";
     </style>
   </head>
   <body>
-    <div>
-      <slot />
-    </div>
+    <div class="max-w-[1280px] mx-auto">
+      <dialog id="download_modal" class="modal">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Download EpubKit</h3>
+          <div class="mt-3">
+            <ul class="space-y-1">
+                <li>
+                  <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-2" >
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button type="submit">close</button>
+        </form>
+      </dialog>
 
+      <nav class="mb-24">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabIndex={0} role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <details>
+                    <summary>Browser Extension</summary>
+                    <ul class="p-2">
+                      <li>
+                        <a href={config.extension.chrome.link} target="_blank" rel="noreferrer">
+                          <FaChrome />
+                          Chrome
+                        </a>
+                      </li>
+                      <li>
+                        <a href={config.extension.edge.link} target="_blank" rel="noreferrer">
+                          <FaEdge />
+                          Edge
+                        </a>
+                      </li>
+                      <li>
+                        <a href={config.extension.firefox.link} target="_blank" rel="noreferrer">
+                          <FaFirefox />
+                          Firefox
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="/zh">中文</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl" href="/">EpubKit</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary>Browser Extension</summary>
+                  <ul class="p-2">
+                    <li>
+                      <a href={config.extension.chrome.link} target="_blank" rel="noreferrer">
+                        <FaChrome />
+                        Chrome
+                      </a>
+                    </li>
+                    <li>
+                      <a href={config.extension.edge.link} target="_blank" rel="noreferrer">
+                        <FaEdge />
+                        Edge
+                      </a>
+                    </li>
+                    <li>
+                      <a href={config.extension.firefox.link} target="_blank" rel="noreferrer">
+                        <FaFirefox />
+                        Firefox
+                      </a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="/zh">中文</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn" type="button" onclick="showDownloadModal()">Try it now</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="max-w-[960px] mx-auto px-8">
+        <slot />
+      </div>
+
+      <footer class="max-w-[960px] mx-auto px-8 my-24 lg:my-48">
+        <div class="mb-6">
+          <strong>EpubKit</strong>
+        </div>
+        <div class="grid md:grid-cols-3">
+          <div class="space-y-3">
+            <div>
+              <a class="" target="_blank" href="https://randynamic.org" rel="noreferrer"
+              >Randynamic Studio</a
+              >
+            </div>
+            <div>
+              <a target="_blank" href="https://twitter.com/epubkitapp" rel="noreferrer">Twitter</a>
+            </div>
+            <div>
+              <a target="_blank" href="https://tally.so/r/3jBb56" rel="noreferrer">Feedback</a>
+            </div>
+            <div>
+              <a target="_blank" href="https://t.me/+DBzD7rAdsUI0OWQ1" rel="noreferrer"
+              >Telegram Group</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script></script>
   </body>
 </html>
