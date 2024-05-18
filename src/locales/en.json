@@ -12,8 +12,8 @@
     "disclaimer": "All generated e-books are publicly released by the original authors, and the copyright belongs to the original authors. This site does not charge any fees for this.",
     "source": "Source",
     "download": "Download",
-    "book_download_title": "Download free \"{{title}}\" ebook",
-    "book_download_description": "Download free \"{{title}}\" ebook, read on Kindle, iPad, Kobo. No sign-up required."
+    "book_download_title": "Download free \"{{title}}\" ebook by {{author}}",
+    "book_download_description": "Download free \"{{title}}\" ebook by {{author}}, read on Kindle, iPad, Kobo. No sign-up required."
   },
   "home": {
     "words": {

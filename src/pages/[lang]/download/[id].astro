@@ -38,8 +38,8 @@ books[lang].unshift(book!);
 ---
 <CollectionsLayout
   t={t}
-  title={t("collections.book_download_title", { title: book?.title })}
-  description={t("collections.book_download_description", {title: book?.title})}
+  title={t("collections.book_download_title", { title: book?.title, author: book?.author })}
+  description={t("collections.book_download_description", {title: book?.title, author: book?.author})}
   books={config.books[lang]}
 >
 </CollectionsLayout>

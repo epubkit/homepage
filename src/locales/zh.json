@@ -11,8 +11,8 @@
     "disclaimer": "所有生成的电子书均由原作者公开发布，版权归原作者所有。本站不以此收取任何费用。",
     "source": "来源",
     "download": "下载",
-    "book_download_title": "免费下载《{{title}}》电子书",
-    "book_download_description": "立即免费下载 《{{title}}》 电子书，无需注册。"
+    "book_download_title": "免费下载 {{author}} 《{{title}}》电子书",
+    "book_download_description": "立即免费下载 {{author}} 《{{title}}》 电子书，无需注册。"
   },
   "home": {
     "words": {
