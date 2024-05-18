@@ -1,14 +1,27 @@
 {
+  "nav": {
+    "browser_extension": "ブラウザー拡張機能",
+    "pricing": "料金",
+    "try_it_now": "今すぐ試す",
+    "free_ebook": "無料電子書籍",
+    "FAQ": "よくある質問"
+  },
+  "collections": {
+    "title": "無料の電子書籍ダウンロード",
+    "description": "EpubKitは、ウェブページを電子書籍に変換するツールです。ここでは、私が読む価値があると思うリソースを紹介します。すべてePub形式に変換され、Kindle、iPad、Koboなどのデバイスで読むことができます。",
+    "disclaimer": "生成された電子書籍はすべて原著者によって公開されており、著作権は原著者に属します。このサイトは一切の料金を徴収しません。",
+    "source": "ソース",
+    "download": "ダウンロード"
+  },
   "home": {
     "words": {
       "slogan": "ウェブを電子書籍に変換する最高のツール",
       "description": "Webページ、オンラインブック、およびRSS記事を電子書籍として保存",
       "download": "ダウンロード",
       "support_platforms": "WindowsとmacOSをサポート",
-      "try_it_now": "今すぐお試しください",
       "pricing": "価格設定",
+      "try_it_now": "今すぐ試す",
       "browser_extension": "ブラウザ拡張機能",
-      "FAQ": "よくある質問",
       "frequently_asked_questions": "よくある質問"
     },
     "features": [

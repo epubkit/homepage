@@ -1,0 +1,27 @@
+---
+import type { GetStaticPaths } from "astro";
+import CollectionsLayout from "../../layouts/collections.astro";
+import { glob } from "glob";
+import { getI18n } from "../../i18n";
+import { config } from '../../config'
+export async function getStaticPaths() {
+	const languages = glob.globSync("src/locales/*.json").map((file) => {
+		return file.split("/").pop().split(".").shift();
+	});
+	return languages.map((lang) => ({ params: { lang } }));
+}
+
+const params = Astro.params;
+const lang = params.lang === "zh" ? "zh" : "en";
+
+const i18next = await getI18n(params.lang);
+const t = i18next.t;
+
+
+---
+<CollectionsLayout
+t={t}
+  title={t("collections.title")}
+  books={config.books[lang]}
+>
+</CollectionsLayout>

@@ -1,14 +1,27 @@
 {
+  "nav": {
+    "browser_extension": "브라우저 확장 프로그램",
+    "pricing": "가격",
+    "try_it_now": "지금 체험하기",
+    "free_ebook": "무료 전자책",
+    "FAQ": "자주 묻는 질문"
+  },
+  "collections": {
+    "title": "무료 전자책 다운로드",
+    "description": "EpubKit은 웹 페이지를 전자책으로 패키징하는 도구입니다. 여기에 제가 읽을 가치가 있다고 생각하는 몇 가지 선택된 자원이 있습니다. 이들은 모두 EpubKit을 사용해 ePub 형식의 전자책으로 패키징되었으며, Kindle, iPad, Kobo 등에서 읽을 수 있습니다",
+    "disclaimer": "모든 생성된 전자책은 원작자가 공개한 것이며, 저작권은 원작자에게 있습니다. 이 사이트는 이에 대해 어떠한 요금도 청구하지 않습니다",
+    "source": "소스",
+    "download": "다운로드"
+  },
   "home": {
     "words": {
       "slogan": "웹을 전자책으로 변환하는 최고의 도구",
       "description": "웹 페이지, 온라인 책, RSS 기사를 전자책으로 저장",
       "download": "다운로드",
       "support_platforms": "Windows 및 macOS 지원",
-      "try_it_now": "지금 시도하세요",
       "pricing": "가격",
+      "try_it_now": "지금 시도하세요",
       "browser_extension": "브라우저 확장 프로그램",
-      "FAQ": "자주 묻는 질문",
       "frequently_asked_questions": "자주 묻는 질문"
     },
     "features": [

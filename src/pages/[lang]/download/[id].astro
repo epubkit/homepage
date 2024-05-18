@@ -1,0 +1,45 @@
+---
+import type { GetStaticPaths } from "astro";
+import CollectionsLayout from "../../../layouts/collections.astro";
+import { glob } from "glob";
+import { getI18n } from "../../../i18n";
+import { config } from '../../../config'
+export async function getStaticPaths() {
+  const paths = [] as any[]
+
+  for (const lang in config.books) {
+    const books = config.books[lang]
+    for (const book of books) {
+      paths.push({
+        params: {
+          lang,
+          id: book.title
+        }
+      })
+    }
+  }
+
+  return paths
+}
+
+const params = Astro.params;
+const lang = params.lang === "zh" ? "zh" : "en";
+
+const i18next = await getI18n(params.lang);
+const t = i18next.t;
+
+const book = config.books[lang].find((book) => book.title === params.id);
+const books = config.books
+// move the current book to the first
+const index = books[lang].indexOf(book);
+books[lang].splice(index, 1);
+books[lang].unshift(book!);
+
+---
+<CollectionsLayout
+  t={t}
+  title={t("collections.book_download_title", { title: book?.title })}
+  description={t("collections.book_download_description", {title: book?.title})}
+  books={config.books[lang]}
+>
+</CollectionsLayout>

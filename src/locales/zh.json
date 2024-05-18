@@ -1,4 +1,19 @@
 {
+  "nav": {
+    "browser_extension": "浏览器插件",
+    "pricing": "价格",
+    "try_it_now": "立即使用",
+    "FAQ": "常见问题",
+    "free_ebook": "免费电子书"
+  },
+  "collections": {
+    "description": "EpubKit 是一个把网页打包成电子书的工具。这里精选了一些个人认为值得一读的资源，均为使用 EpubKit 打包成 ePub 格式的电子书，可以在 Kindle, iPad, 微信读书等设备上阅读。",
+    "disclaimer": "所有生成的电子书均由原作者公开发布，版权归原作者所有。本站不以此收取任何费用。",
+    "source": "来源",
+    "download": "下载",
+    "book_download_title": "免费下载《{{title}}》电子书",
+    "book_download_description": "立即免费下载 《{{title}}》 电子书，无需注册。"
+  },
   "home": {
     "words": {
       "slogan": "网页转电子书最好的工具",

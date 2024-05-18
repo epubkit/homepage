@@ -1,14 +1,27 @@
 {
+  "nav": {
+    "browser_extension": "Browser-Erweiterung",
+    "pricing": "Preise",
+    "try_it_now": "Jetzt ausprobieren",
+    "free_ebook": "Kostenlose E-Books",
+    "FAQ": "FAQ"
+  },
+  "collections": {
+    "title": "Kostenlose E-Books herunterladen",
+    "description": "EpubKit ist ein Tool, das Webseiten in E-Books verpackt. Hier sind einige ausgewählte Ressourcen, die ich persönlich für lesenswert halte. Sie sind alle im ePub-Format und können auf Geräten wie Kindle, iPad und Kobo gelesen werden",
+    "disclaimer": "Alle generierten E-Books werden von den ursprünglichen Autoren öffentlich freigegeben und das Urheberrecht gehört den ursprünglichen Autoren. Diese Seite erhebt keine Gebühren dafür",
+    "source": "Quelle",
+    "download": "Herunterladen"
+  },
   "home": {
     "words": {
       "slogan": "Das beste Tool, um Web zu E-Book zu konvertieren",
       "description": "Speichern Sie Webseiten, Online-Bücher und RSS-Artikel als E-Books",
       "download": "Herunterladen",
       "support_platforms": "Unterstützt Windows und macOS",
-      "try_it_now": "Jetzt ausprobieren",
       "pricing": "Preise",
+      "try_it_now": "Jetzt ausprobieren",
       "browser_extension": "Browsererweiterung",
-      "FAQ": "FAQ",
       "frequently_asked_questions": "Häufige Fragen"
     },
     "features": [

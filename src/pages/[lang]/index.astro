@@ -2,7 +2,7 @@
 import { config } from "../../config";
 import Home from "../../layouts/home.astro";
 import Main from "../../layouts/main.astro";
-import i18next from "i18next";
+import {getI18n} from '../../i18n'
 import * as glob from 'glob'
 
 export async function getStaticPaths() {
@@ -14,25 +14,11 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 
-i18next.init({
-  lng: lang,
-  resources: {
-    [lang]: {
-      translation: await import(`../../locales/${lang}.json`),
-    },
-  },
-});
+const i18next = await getI18n(lang)
+const t = i18next.t
 
-const features = i18next.t("home.features", { returnObjects: true });
-const qna = i18next.t("home.qna", { returnObjects: true });
-const pricing = i18next.t("home.pricing", { returnObjects: true });
-const words = i18next.t("home.words", { returnObjects: true });
 ---
 
-
 <Home 
-  features={features}
-  qna={qna}
-  pricing={pricing}
-  words={words}
+  t={t}
  />

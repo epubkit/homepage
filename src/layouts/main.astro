@@ -10,9 +10,13 @@ import {
 	FaLanguage,
 	FaWindows,
 } from "react-icons/fa";
+import { getI18n } from "../i18n";
 
-const { lang } = Astro.params;
+const lang = Astro.params.lang || "en";
 
+const i18next = await getI18n(lang);
+const t = i18next.t;
+const { fullWidth } = Astro.props;
 const langs = [
 	{
 		code: "en",
@@ -41,7 +45,7 @@ const langs = [
 ];
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     {import.meta.env.PROD &&
     <script
@@ -61,7 +65,7 @@ const langs = [
     </script>
     <SEO
       title={content.title}
-      description="Best tool to convert web pages to EPUB. Ideal for compiling research, creating personalized reading lists, or archiving websites. "
+      description={content.description || "Best tool to convert web pages to EPUB. Ideal for compiling research, creating personalized reading lists, or archiving websites. "}
       openGraph={{
         basic: {
           title: content.title,
@@ -69,7 +73,7 @@ const langs = [
           type: content.ogType || "website",
         },
         optional: {
-          description: "EpubKit is the best tool to convert web pages to EPUB",
+          description: content.description || "EpubKit is the best tool to convert web pages to EPUB",
           siteName: content.title,
         },
       }}
@@ -132,7 +136,7 @@ const langs = [
               <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
                   <details>
-                    <summary>Browser Extension</summary>
+                    <summary>{t("nav.browser_extension")}</summary>
                     <ul class="p-2">
                       <li>
                         <a href={config.extension.chrome.link} target="_blank" rel="noreferrer">
@@ -155,9 +159,9 @@ const langs = [
                     </ul>
                   </details>
                 </li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="/zh">中文</a></li>
+                <li><a href=`/${lang}/#pricing`>{t("nav.pricing")}</a></li>
+               <li><a href=`/${lang}/collections`>{t("nav.free_ebook")}</a></li>
+                <li><a href=`/${lang}/#faq`>{t("nav.FAQ")}</a></li>
               </ul>
             </div>
             <a class="btn btn-ghost text-xl" href="/">EpubKit</a>
@@ -166,7 +170,7 @@ const langs = [
             <ul class="menu menu-horizontal px-1">
               <li>
                 <details>
-                  <summary>Browser Extension</summary>
+                  <summary>{t("nav.browser_extension")}</summary>
                   <ul class="p-2">
                     <li>
                       <a href={config.extension.chrome.link} target="_blank" rel="noreferrer">
@@ -189,9 +193,9 @@ const langs = [
                   </ul>
                 </details>
               </li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="/zh">中文</a></li>
+               <li><a href=`/${lang}/#pricing`>{t("nav.pricing")}</a></li>
+               <li><a href=`/${lang}/collections`>{t("nav.free_ebook")}</a></li>
+                <li><a href=`/${lang}/#faq`>{t("nav.FAQ")}</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -209,12 +213,14 @@ const langs = [
                 </details>
               </li>
             </ul>
-            <button class="btn" type="button" onclick="showDownloadModal()">Try it now</button>
+            <button class="btn" type="button" onclick="showDownloadModal()">{t("nav.try_it_now")}</button>
           </div>
         </div>
       </nav>
 
-      <div class="max-w-[960px] mx-auto px-8">
+      <div class=" mx-auto px-8" class:list={{
+        'max-w-[960px]': fullWidth !== true, 
+      }}>
         <slot />
       </div>
 

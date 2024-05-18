@@ -2,18 +2,10 @@
 import { config } from "../config";
 import Main from "../layouts/main.astro";
 
-const { features, qna, pricing, words} = Astro.props as { 
-  words: any,
-	features: { title: string; description: string; img: string }[];
-	qna: { q: string; a: string }[];
-	pricing: {
-		title: string;
-		price: string;
-		originalPrice?: string;
-		description: string;
-		features: string[];
-	}[];
+const { t } = Astro.props as {
+	t: any;
 };
+
 ---
 
 <Main content={{
@@ -22,16 +14,16 @@ const { features, qna, pricing, words} = Astro.props as {
 }}>
       <div class="">
       <div class="text-center space-y-6">
-        <h2 class="text-4xl md:text-6xl font-black max-w-[700px] inline-block">{words.slogan}</h2>
-        <h3 class="text-2xl text-base-content/80 font-black">{words.description}</h3>
+        <h2 class="text-4xl md:text-6xl font-black max-w-[700px] inline-block">{t('home.words.slogan')}</h2>
+        <h3 class="text-2xl text-base-content/80 font-black">{t('home.words.description')}</h3>
       </div>
 
       <section class="text-center mt-12">
         <div class="flex flex-col gap-3">
           <div>
-            <button class="btn btn-primary rounded-full" type="button" onclick="showDownloadModal()">{words.download}</button>
+            <button class="btn btn-primary rounded-full" type="button" onclick="showDownloadModal()">{t('home.words.download')}</button>
           </div>
-          <small>{words.support_platforms}</small>
+          <small>{t('home.words.support_platforms')}</small>
         </div>
       </section>
 
@@ -46,7 +38,7 @@ const { features, qna, pricing, words} = Astro.props as {
       <hr class="my-24" />
 
       <div class="space-y-24">
-        {features.map((feature, index) => (
+        {t('home.features', {returnObjects: true}).map((feature, index) => (
           <section>
             <div class="space-y-6">
               <h2 class="text-center text-4xl font-black">{feature.title}</h2>
@@ -63,9 +55,9 @@ const { features, qna, pricing, words} = Astro.props as {
       <hr class="my-24" />
 
       <section id="pricing">
-        <h2 class="text-3xl text-center font-medium mb-12">Pricing</h2>
+        <h2 class="text-3xl text-center font-medium mb-12">{t("home.words.pricing")}</h2>
         <div class="grid md:grid-cols-3 gap-6">
-          {pricing.map(item => {
+          {t('home.pricing', {returnObjects: true}).map(item => {
             return (
               <div class="border rounded-xl p-6 space-y-3">
                 <h3 class="text-xl font-bold">{item.title}</h3>
@@ -89,7 +81,7 @@ const { features, qna, pricing, words} = Astro.props as {
                 <div class="pt-6">
                   {item.price === "$0" ? (
                     <>
-                      <button class="btn  rounded-full w-full btn-sm" type="button" onclick="showDownloadModal()">{words.try_it_now}</button>
+                      <button class="btn  rounded-full w-full btn-sm" type="button" onclick="showDownloadModal()">{t('home.words.try_it_now')}</button>
                     </>
                   ) : (
                     <a href={config.buyLink} target="_blank" class="btn btn-primary rounded-full w-full btn-sm" type="button" rel="noreferrer">Buy</a>
@@ -105,9 +97,9 @@ const { features, qna, pricing, words} = Astro.props as {
       <hr class="my-24" />
 
       <section id="faq">
-        <h2 class="text-3xl text-center font-medium mb-12">{words.frequently_asked_questions}</h2>
+        <h2 class="text-3xl text-center font-medium mb-12">{t('home.words.frequently_asked_questions')}</h2>
         <div class="space-y-3">
-          {qna.map(item => {
+          {t('home.qna', {returnObjects: true}).map(item => {
             return (
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="qna" />

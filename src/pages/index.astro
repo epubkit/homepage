@@ -1,29 +1,15 @@
 ---
 import Home from "../layouts/home.astro";
-import Main from "../layouts/main.astro";
-import i18next from "i18next";
-import * as glob from 'glob'
+import { getI18n } from "../i18n";
 
 const defaultLang = "en";
-i18next.init({
-  lng: defaultLang,
-  resources: {
-    [defaultLang]: {
-      translation: await import(`../locales/${defaultLang}.json`),
-    },
-  },
-});
 
-const features = i18next.t("home.features", { returnObjects: true });
-const qna = i18next.t("home.qna", { returnObjects: true });
-const pricing = i18next.t("home.pricing", { returnObjects: true });
-const words = i18next.t("home.words", { returnObjects: true });
+const i18next = await getI18n(defaultLang);
+const t = i18next.t;
+
 ---
 
 
 <Home 
-  features={features}
-  qna={qna}
-  words={words}
-  pricing={pricing}
+  t={t}
  />

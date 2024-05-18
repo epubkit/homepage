@@ -1,0 +1,40 @@
+---
+import { getI18n } from "../i18n";
+import Main from "./main.astro";
+
+const { books, title, t, description } = Astro.props;
+---
+
+<Main fullWidth={true} content={{
+  title: `${title} | EpubKit`,
+  ogType: "website",
+  description: description,
+}}>
+  <div class="">
+
+    <div class="prose my-24">
+      <p>{t("collections.description")}</p>
+      <p>
+        <i>{t("collections.disclaimer")}</i>
+      </p>
+    </div>
+    <div class="grid xl:grid-cols-3 gap-8">
+      {books.map(book => {
+        return (
+          <div class="card  bg-base-100 shadow-xl">
+            <figure class="pt-12"><img class="w-[140px] rounded-xl" src={book.cover} alt={book.title}/></figure>
+            <div class="card-body">
+              <h2 class="card-title">{book.title}</h2>
+              <h3 class="text-base-content/60">{book.author}</h3>
+              <p>{book.description}</p>
+              <div class="card-actions justify-end gap-3 mt-3">
+                <a href={book.source} target="_blank" class="btn btn-sm">{t("collections.source")}</a>
+                <a href={book.download} target="_blank" class="btn btn-sm btn-primary">{t("collections.download")}</a>
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+</Main>
