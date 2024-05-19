@@ -22,6 +22,14 @@ export const config = {
         source: "https://1000h.org/",
       },
       {
+        title: "保罗·格雷厄姆博客合集",
+        author: "Paul Graham",
+        download: "https://ebook-downloads.epubkit.app/pg-20240519-cn.epub",
+        description: "保罗·格雷厄姆（Paul Graham）的文章合集，截至 2024-05-19",
+        cover: "/images/pg.png",
+        source: "http://www.paulgraham.com/articles.html",
+      },
+      {
         title: "SEO 初学者指南",
         author: "ahrefs",
         description: "ahrefs 出品的 SEO 基础知识入门指南",
@@ -67,6 +75,14 @@ export const config = {
       },
     ],
     en: [
+      {
+        title: "Paul Graham Blog Collection",
+        author: "Paul Graham",
+        download: "https://ebook-downloads.epubkit.app/pg-20240519.epub",
+        description: "A collection of Paul Graham's essays, to 2024-05-19",
+        cover: "/images/pg.png",
+        source: "http://www.paulgraham.com/articles.html",
+      },
       {
         title: "Tools for better thinking",
         author: "untools",
