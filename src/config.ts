@@ -30,6 +30,14 @@ export const config = {
         source: "http://www.paulgraham.com/articles.html",
       },
       {
+        title: "区块链技术指南",
+        author: "github.com/",
+        download: "https://ebook-downloads.epubkit.app/blockchain-guide.epub",
+        description: "探索区块链概念的来龙去脉，剖析关键技术和原理",
+        source: "https://yeasy.gitbook.io/blockchain_guide",
+        cover: "/images/blockchain-guide.png"
+      },
+      {
         title: "SEO 初学者指南",
         author: "ahrefs",
         description: "ahrefs 出品的 SEO 基础知识入门指南",
