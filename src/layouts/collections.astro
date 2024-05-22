@@ -13,7 +13,7 @@ const { books, title, t, description } = Astro.props;
   <div class="">
 
     <div class="prose my-24">
-      <p>{t("collections.description")}</p>
+      <p class="text-xl  leading-relaxed" set:html={t("collections.description")} />
       <p>
         <i>{t("collections.disclaimer")}</i>
       </p>

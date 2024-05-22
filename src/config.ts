@@ -14,6 +14,14 @@ export const config = {
   books: {
     zh: [
       {
+        title: "Prompt Engineering Guide 中英对照",
+        author: "DAIR.AI",
+        description: "AI 提示词工程指南",
+        download: "https://ebook-downloads.epubkit.app/Prompt Engineering Guide 中英对照.epub",
+        cover: "/images/prompt-engineering-guide.png",
+        source: "https://www.promptingguide.ai/"
+      },
+      {
         title: "1000 小时",
         author: "李笑来",
         description: "用你的注意力填满一千小时就能练成任何你所需要的技能",
