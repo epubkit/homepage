@@ -84,7 +84,7 @@ const { t } = Astro.props as {
                       <button class="btn  rounded-full w-full btn-sm" type="button" onclick="showDownloadModal()">{t('home.words.try_it_now')}</button>
                     </>
                   ) : (
-                    <a href={item.price === '$12' ? "https://buy.stripe.com/3csbJW6IObiG29WfYZ" : "https://buy.stripe.com/14k6pC9V0gD08ykcMO"} target="_blank" class="btn btn-primary rounded-full w-full btn-sm" type="button" rel="noreferrer">Buy</a>
+                    <a href={item.price === '$19' ? "https://api.epubkit.app/buy/standard" : "https://api.epubkit.app/buy/pro"} target="_blank" class="btn btn-primary rounded-full w-full btn-sm" type="button" rel="noreferrer">Buy</a>
                   )}
                 </div>
               </div>

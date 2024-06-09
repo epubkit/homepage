@@ -11,7 +11,9 @@
     "description": "EpubKit ist ein Tool, das Webseiten in E-Books verpackt. Hier sind einige ausgewählte Ressourcen, die ich persönlich für lesenswert halte. Sie sind alle im ePub-Format und können auf Geräten wie Kindle, iPad und Kobo gelesen werden",
     "disclaimer": "Alle generierten E-Books werden von den ursprünglichen Autoren öffentlich freigegeben und das Urheberrecht gehört den ursprünglichen Autoren. Diese Seite erhebt keine Gebühren dafür",
     "source": "Quelle",
-    "download": "Herunterladen"
+    "download": "Herunterladen",
+    "book_download_title": "Kostenloses \"{{title}}\" E-Book von {{author}} herunterladen",
+    "book_download_description": "Kostenloses \"{{title}}\" E-Book von {{author}} herunterladen, lesen auf Kindle, iPad, Kobo. Keine Anmeldung erforderlich"
   },
   "home": {
     "words": {
@@ -88,7 +90,8 @@
           "Individuelles Cover",
           "Browser-Plugin",
           "Auf zwei Geräten aktivieren",
-          "Lebenslange Versions-Updates"
+          "Lebenslange Versions-Updates",
+          "Weitere exklusive Profi-Funktionen in Zukunft"
         ],
         "description": "Einmalzahlung"
       }

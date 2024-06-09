@@ -70,27 +70,28 @@
         ]
       },
       {
-        "title": "Pro",
-        "price": "$12",
+        "title": "Standard",
+        "price": "$19",
         "description": "One-time payment",
         "features": [
           "Unlimited page export",
           "Custom cover",
           "Browser plugin",
-          "Activate on one device",
-          "One year of version updates"
+          "Activate on 1 device",
+          "Lifetime version updates"
         ]
       },
       {
-        "title": "Lifetime",
+        "title": "Pro",
         "price": "$29",
         "originalPrice": "$39",
         "features": [
           "Unlimited page export",
           "Custom cover",
           "Browser plugin",
-          "Activate on two devices",
-          "Lifetime version updates"
+          "Activate on 2 devices",
+          "Lifetime version updates",
+          "More Pro-only features in the future"
         ],
         "description": "One-time payment"
       }

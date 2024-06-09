@@ -11,7 +11,9 @@
     "description": "EpubKit은 웹 페이지를 전자책으로 패키징하는 도구입니다. 여기에 제가 읽을 가치가 있다고 생각하는 몇 가지 선택된 자원이 있습니다. 이들은 모두 EpubKit을 사용해 ePub 형식의 전자책으로 패키징되었으며, Kindle, iPad, Kobo 등에서 읽을 수 있습니다",
     "disclaimer": "모든 생성된 전자책은 원작자가 공개한 것이며, 저작권은 원작자에게 있습니다. 이 사이트는 이에 대해 어떠한 요금도 청구하지 않습니다",
     "source": "소스",
-    "download": "다운로드"
+    "download": "다운로드",
+    "book_download_title": "\"{{title}}\" 전자책 무료 다운로드 - {{author}}",
+    "book_download_description": "\"{{title}}\" 전자책 무료 다운로드 - {{author}}, Kindle, iPad, Kobo에서 읽기. 가입 불필요."
   },
   "home": {
     "words": {
@@ -88,7 +90,8 @@
           "맞춤 커버",
           "브라우저 플러그인",
           "장치 두 개에서 활성화",
-          "평생 버전 업데이트"
+          "평생 버전 업데이트",
+          "앞으로 더 많은 프로 전용 기능"
         ],
         "description": "일회성 결제"
       }
